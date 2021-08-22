@@ -8,10 +8,9 @@ trait Formatted {
 
     abstract protected function setFormattedItems(): void;
     
-    protected function addFormattedItem(string $key, array $configuration): Formatted
+    protected function addFormattedItem(string $key, array $configuration): void
     {
         array_push($this->formattedItems, [$key => $configuration]);
-        return $this;
     }
     
     public function getFormattedAttribute()
