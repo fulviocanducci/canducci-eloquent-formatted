@@ -11,9 +11,18 @@
   "authors": [
     {
       "name": "Fúlvio",
-      "email": "fulviocanducci@hotmail.com"
+      "email": "fulviocanducci@hotmail.com",
+      "role": "Developer",
+      "homepage": "https://github.com/fulviocanducci/canducci-eloquent-formatted"
     }
   ],
   "minimum-stability": "dev",
+  "version": "1.0.0",
+  "keywords": [
+    "library",
+    "formatted",
+    "model",
+    "eloquent"
+  ],
   "require": {}
 }
