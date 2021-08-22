@@ -1,4 +1,4 @@
-<?php
+<?php namespace Canducci\Formatted\Traits;
 
 trait FormattedCurrency {
     public function formattedCurrency($name, $decimals = 2, $decimals_separator = '.', $thousands_separator = ',') {
