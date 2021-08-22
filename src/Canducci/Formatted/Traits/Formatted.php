@@ -1,5 +1,6 @@
 <?php namespace Canducci\Formatted\Traits;
 
+use Exception;
 use stdClass;
 
 trait Formatted {
@@ -10,7 +11,11 @@ trait Formatted {
     
     protected function addFormattedItem(string $key, array $configuration): void
     {
-        array_push($this->formattedItems, [$key => $configuration]);
+        if (!in_array($key, $this->formattedItems)) {
+            $this->formattedItems[$key] = $configuration;
+        } else {
+            throw new Exception("Error: repeated key");
+        }
     }
     
     public function getFormattedAttribute()
