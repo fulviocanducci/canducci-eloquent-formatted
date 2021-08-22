@@ -11,3 +11,5 @@
 composer require canducci/eloquent-formatted
 ```
 
+## Configuration
+
