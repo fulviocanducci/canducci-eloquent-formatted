@@ -4,7 +4,6 @@ use stdClass;
 
 trait Formatted {
 
-    protected $formattedName = 'formatted';
     protected $formattedItems = [];
 
     public function getFormattedAttribute()
