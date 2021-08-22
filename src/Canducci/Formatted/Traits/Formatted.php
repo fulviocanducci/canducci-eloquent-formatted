@@ -6,8 +6,17 @@ trait Formatted {
 
     protected $formattedItems = [];
 
+    abstract protected function setFormattedItems(): void;
+    
+    public function addFormattedItem($key, $configuration): Formatted
+    {
+        array_push($this->formattedItems, [$key, $configuration]);
+        return $this;
+    }
+    
     public function getFormattedAttribute()
     {
+        $this->setFormattedItems();
         $data = new stdClass;        
         if (is_null($this->formattedItems) === false && is_array($this->formattedItems) && count($this->formattedItems) > 0) {
             foreach($this->formattedItems as $key => $item) {
