@@ -1,0 +1,19 @@
+{
+  "name": "canducci/eloquent-formatted",
+  "description": "Canducci Eloquent Formatted",
+  "type": "library",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "Canducci\\Formatted\\": "src/Canducci/Formatted/"
+    }
+  },
+  "authors": [
+    {
+      "name": "Fúlvio",
+      "email": "fulviocanducci@hotmail.com"
+    }
+  ],
+  "minimum-stability": "dev",
+  "require": {}
+}
