@@ -5,13 +5,13 @@ use stdClass;
 trait Formatted {
 
     protected $formattedName = 'formatted';
-    protected $items = [];
+    protected $formattedItems = [];
 
     public function getFormattedAttribute()
     {
-        $data = new stdClass;
-        if (is_null($this->items) === false && is_array($this->items) && count($this->items) > 0) {
-            foreach($this->items as $key => $item) {
+        $data = new stdClass;        
+        if (is_null($this->formattedItems) === false && is_array($this->formattedItems) && count($this->formattedItems) > 0) {
+            foreach($this->formattedItems as $key => $item) {
                 $data->$key = call_user_func_array([$this, sprintf('formatted%s', ucfirst($item[0]))], $item[1]);
             }
         }
