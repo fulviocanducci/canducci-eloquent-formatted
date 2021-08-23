@@ -3,6 +3,9 @@
   "description": "Canducci Eloquent Formatted",
   "type": "library",
   "license": "MIT",
+  "scripts": {
+    "test": "phpunit tests/"
+  },
   "autoload": {
     "psr-4": {
       "Canducci\\Formatted\\": "src/Canducci/Formatted/"
@@ -29,6 +32,8 @@
   },
   "require-dev": {
     "phpunit/phpunit": "v9.5.8",
-    "phpspec/phpspec": "v7.1.0"
+    "phpspec/phpspec": "v7.1.0",
+    "illuminate/database": "9.x-dev",
+    "illuminate/events": "9.x-dev"
   }
 }
