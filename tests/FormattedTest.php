@@ -15,7 +15,6 @@ class FormattedTest extends TestCase
     protected function setUp(): void
     {        
         $this->model = new People();
-        var_dump($this->model->first()->toArray());
     }
 
     public function testPeopleCount(): void
@@ -27,6 +26,13 @@ class FormattedTest extends TestCase
     {
         $model = $this->model->first();
         $d = date_create_from_format('d/m/Y', $model->formatted->birthday);
+        $this->assertNotNull($d);
+    }
+
+    public function testPeopleFormattedDateTime(): void
+    {
+        $model = $this->model->first();
+        $d = date_create_from_format('d/m/Y H:i:s', $model->formatted->birthday);
         $this->assertNotNull($d);
     }
 
