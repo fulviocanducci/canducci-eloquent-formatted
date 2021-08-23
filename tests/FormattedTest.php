@@ -15,6 +15,7 @@ class FormattedTest extends TestCase
     protected function setUp(): void
     {        
         $this->model = new People();
+        var_dump($this->model->first()->toArray());
     }
 
     public function testPeopleCount(): void
