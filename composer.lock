@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "01e46e65bcfc585a7b292c789b407f6f",
+    "content-hash": "e23e57eaf0a29bbaa4c153dcdff764af",
     "packages": [],
     "packages-dev": [
         {
@@ -2892,12 +2892,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/console.git",
-                "reference": "bb586391fbffb961ec4ce6d187529b6980c43421"
+                "reference": "1fd7d6a6bfe31c7876f51b4b8ca6ec33f653d890"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/console/zipball/bb586391fbffb961ec4ce6d187529b6980c43421",
-                "reference": "bb586391fbffb961ec4ce6d187529b6980c43421",
+                "url": "https://api.github.com/repos/symfony/console/zipball/1fd7d6a6bfe31c7876f51b4b8ca6ec33f653d890",
+                "reference": "1fd7d6a6bfe31c7876f51b4b8ca6ec33f653d890",
                 "shasum": ""
             },
             "require": {
@@ -2983,7 +2983,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-08-18T21:02:44+00:00"
+            "time": "2021-08-23T12:58:54+00:00"
         },
         {
             "name": "symfony/deprecation-contracts",
